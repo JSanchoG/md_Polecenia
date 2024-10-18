@@ -34,7 +34,7 @@ $ less -p "Luka" test.txt
 ```
 ![](https://i.imgur.com/uggMQ8i.png)
 
-
+<hr>
 
 ## Less skróty klawiaturowe
 
