@@ -36,6 +36,19 @@ $ less -p "Luka" test.txt
 
 <hr>
 
+#### `+F`: Włącza tryb automatycznego przewijania (follow mode)
+```bash
+$ less +F nazwa_pliku.txt
+```
+Przykład polecenia:
+```bash
+$ less +F test.txt
+```
+![](https://i.imgur.com/z9puhVl.png)
+
+
+<hr>
+
 ## Less skróty klawiaturowe
 
 #### Polecenie less akceptuje skróty klawiaturowe ułatwiające nawigację po tekście, zwłaszcza podczas czytania dużych plików:
@@ -67,20 +80,6 @@ $ less -p "Luka" test.txt
     
     q : Wyjdź.
 
-
-
-
-<hr>
-
-#### `+F`: Włącza tryb automatycznego przewijania (follow mode)
-```bash
-$ less +F nazwa_pliku.txt
-```
-Przykład polecenia:
-```bash
-$ less +F test.txt
-```
-![](https://i.imgur.com/z9puhVl.png)
 
 
 # `wc` – Opis polecenia
