@@ -49,9 +49,9 @@ $ less +F test.txt
 
 <hr>
 
-## Less skróty klawiaturowe
+## `Less` skróty klawiaturowe
 
-#### Polecenie less akceptuje skróty klawiaturowe ułatwiające nawigację po tekście, zwłaszcza podczas czytania dużych plików:
+#### Polecenie `less` akceptuje skróty klawiaturowe ułatwiające nawigację po tekście, zwłaszcza podczas czytania dużych plików:
 
 
     Strzałka w dół, Enter, e, j : Jedna linia do przodu.
