@@ -33,6 +33,43 @@ Przykład polecenia:
 $ less -p "Luka" test.txt
 ```
 ![](https://i.imgur.com/uggMQ8i.png)
+
+
+
+## Less skróty klawiaturowe
+
+#### Polecenie less akceptuje skróty klawiaturowe ułatwiające nawigację po tekście, zwłaszcza podczas czytania dużych plików:
+
+
+    Strzałka w dół, Enter, e, j : Jedna linia do przodu.
+    
+    Strzałka w górę, y, k : Jedna linia wstecz.
+    
+    Spacja, Page Down : Jedna strona do przodu.
+    
+    Page Up, b : Jedna strona wstecz.
+    
+    Strzałka w prawo : Przewiń w prawo.
+    
+    Strzałka w lewo : Przewiń w lewo.
+    
+    Home, g : Skok na początek pliku.
+    
+    End, G : Skok na koniec pliku.
+    
+    /[string] : Wyszukiwanie w przód określonego ciągu.
+    
+    ?[łańcuch] : Wyszukiwanie wstecz dla określonego ciągu.
+    
+    n : Następne dopasowanie podczas wyszukiwania.
+    
+    N : Poprzednie dopasowanie podczas wyszukiwania.
+    
+    q : Wyjdź.
+
+
+
+
 <hr>
 
 #### `+F`: Włącza tryb automatycznego przewijania (follow mode)
