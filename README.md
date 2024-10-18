@@ -1,4 +1,3 @@
-
 # `less` – Opis polecenia
 
 `less` to polecenie w systemie Linux służące do przeglądania plików tekstowych w trybie stronicowania. Pozwala na przewijanie pliku w górę i w dół, w przeciwieństwie do komendy `more`, która umożliwia jedynie przewijanie w dół. `less` jest bardziej elastyczny i oferuje dodatkowe funkcje do poruszania się po plikach.
@@ -23,3 +22,32 @@ less -p "szukany_tekst" nazwa_pliku.txt
 less +F nazwa_pliku.txt
 ```
 <hr>
+
+# `wc` – Opis polecenia
+
+`wc` (word count) to polecenie w systemie Linux służące do zliczania liczby linii, słów i znaków w plikach tekstowych. Umożliwia szybkie sprawdzenie rozmiaru pliku pod kątem ilości zawartych danych.
+
+```bash
+wc [opcje] [plik]
+```
+## Argumenty polecenia:
+#### `-l`: Wyświetla liczbę linii
+```bash
+wc -l nazwa_pliku.txt
+```
+#### `-w`: Wyświetla liczbę słów
+```bash
+wc -w nazwa_pliku.txt
+```
+#### `-c`: Wyświetla liczbę bajtów (znaków)
+```bash
+wc -c nazwa_pliku.txt
+```
+#### `-m`: Wyświetla liczbę znaków (również tych wielobajtowych, np. UTF-8)
+```bash
+wc -m nazwa_pliku.txt
+```
+#### `-L`: Wyświetla długość najdłuższej linii
+```bash
+wc -L nazwa_pliku.txt
+```
