@@ -81,6 +81,8 @@ $ less +F test.txt
     q : Wyjdź.
 
 
+<hr>
+
 
 # `wc` – Opis polecenia
 
