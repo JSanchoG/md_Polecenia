@@ -1,97 +1,14 @@
-
-# `less` – Opis polecenia
-
-`less` to polecenie w systemie Linux służące do przeglądania plików tekstowych w trybie stronicowania. Pozwala na przewijanie pliku w górę i w dół, w przeciwieństwie do komendy `more`, która umożliwia jedynie przewijanie w dół. `less` jest bardziej elastyczny i oferuje dodatkowe funkcje do poruszania się po plikach.
-```bash
-$ less [opcje] [plik]
-```
-## Argumenty polecenia:
-#### `-N`: Wyświetla numery linii
-```bash
-$ less -N nazwa_pliku.txt
-```
-Przykład polecenia:
-```bash
-$ less -N test.txt
-```
-![](https://i.imgur.com/zfTAVkO.png)<hr>
-#### `-S`: Wyłącza automatyczne zawijanie linii (przydatne przy długich liniach)
-```bash
-$ less -S nazwa_pliku.txt
-```
-Przykład polecenia:
-```bash
-$ less -S test.txt
-```
-![](https://i.imgur.com/kMaL99i.png)<hr>
-#### `-p`: "wzorzec" - Otwiera plik i przeskakuje do pierwszego wystąpienia wzorca tekstowego
-```bash
-$ less -p "szukany_tekst" nazwa_pliku.txt
-```
-Przykład polecenia:
-```bash
-$ less -p "Luka" test.txt
-```
-![](https://i.imgur.com/uggMQ8i.png)
+- [Testowy plik test.txt](#testowy-plik-testtxt)
+- Polecenia:
+	- [less](#less--opis-polecenia)
+		- Argumenty polecenia: [-N](#-n-wyświetla-numery-linii) | [-S](#-s-wylacza-automatyczne-zawijanie-linii-przydatne-przy-dlugich-liniach)  | [-p](#-p-wzorzec--otwiera-plik-i-przeskakuje-do-pierwszego-wystapienia-wzorca-tekstowego) | [+F](#f-wlacza-tryb-automatycznego-przewijania-follow-mode)
+		- [Skróty klawiaturowe](#Skróty-klawiaturowe)
+	- [wc](#wc--opis-polecenia)
+		- Argumenty polecenia: [-l](#-l-wyswietla-liczbe-linii) | [-w](#-w-wyswietla-liczbe-slow) | [-c](#-c-wyswietla-liczbe-bajtow-znakow) | [-m](#-m-wyswietla-liczbe-znakow-rowniez-tych-wielobajtowych-np-utf-8) | [-L](#-l-wyswietla-dlugosc-najdluzszej-linii)
 
 <hr>
 
-#### `+F`: Włącza tryb automatycznego przewijania (follow mode)
-```bash
-$ less +F nazwa_pliku.txt
-```
-Przykład polecenia:
-```bash
-$ less +F test.txt
-```
-![](https://i.imgur.com/z9puhVl.png)
-
-
-<hr>
-
-## `Less` skróty klawiaturowe
-
-#### Polecenie `less` akceptuje skróty klawiaturowe ułatwiające nawigację po tekście, zwłaszcza podczas czytania dużych plików:
-
-
-    Strzałka w dół, Enter, e, j : Jedna linia do przodu.
-    
-    Strzałka w górę, y, k : Jedna linia wstecz.
-    
-    Spacja, Page Down : Jedna strona do przodu.
-    
-    Page Up, b : Jedna strona wstecz.
-    
-    Strzałka w prawo : Przewiń w prawo.
-    
-    Strzałka w lewo : Przewiń w lewo.
-    
-    Home, g : Skok na początek pliku.
-    
-    End, G : Skok na koniec pliku.
-    
-    /[string] : Wyszukiwanie w przód określonego ciągu.
-    
-    ?[łańcuch] : Wyszukiwanie wstecz dla określonego ciągu.
-    
-    n : Następne dopasowanie podczas wyszukiwania.
-    
-    N : Poprzednie dopasowanie podczas wyszukiwania.
-    
-    q : Wyjdź.
-
-
-<hr>
-
-
-# `wc` – Opis polecenia
-
-`wc` (word count) to polecenie w systemie Linux służące do zliczania liczby linii, słów i znaków w plikach tekstowych. Umożliwia szybkie sprawdzenie rozmiaru pliku pod kątem ilości zawartych danych.
-
-```bash
-$ wc [opcje] [plik]
-```
-Testowy plik `test.txt`:
+#### Testowy plik `test.txt`:
 ```
 testowy dokument
 test
@@ -102,7 +19,80 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate nisl conse
 
 Luka Doncic is Devin Booker Father.
 ```
-## Argumenty polecenia:
+<hr>
+
+#  `less` – Opis polecenia
+
+`less` to polecenie w systemie Linux służące do przeglądania plików tekstowych w trybie stronicowania. Pozwala na przewijanie pliku w górę i w dół, w przeciwieństwie do komendy `more`, która umożliwia jedynie przewijanie w dół. `less` jest bardziej elastyczny i oferuje dodatkowe funkcje do poruszania się po plikach.
+```bash
+$ less [opcje] [plik]
+```
+
+### Argumenty polecenia:
+#### `-N`: Wyświetla numery linii
+```bash
+$ less -N nazwa_pliku.txt
+```
+Przykład polecenia:
+```bash
+$ less -N test.txt
+```
+![](https://raw.githubusercontent.com/JSanchoG/md_Polecenia/refs/heads/main/img/less-N_full.png)<hr>
+#### `-S`: Wyłącza automatyczne zawijanie linii (przydatne przy długich liniach)
+```bash
+$ less -S nazwa_pliku.txt
+```
+Przykład polecenia:
+```bash
+$ less -S test.txt
+```
+![](https://raw.githubusercontent.com/JSanchoG/md_Polecenia/refs/heads/main/img/less-S_full.png)<hr>
+#### `-p`: "wzorzec" - Otwiera plik i przeskakuje do pierwszego wystąpienia wzorca tekstowego
+```bash
+$ less -p "szukany_tekst" nazwa_pliku.txt
+```
+Przykład polecenia:
+```bash
+$ less -p "Luka" test.txt
+```
+![](https://github.com/JSanchoG/md_Polecenia/blob/main/img/less-p_full.png?raw=true)
+<hr>
+
+#### `+F`: Włącza tryb automatycznego przewijania (follow mode)
+```bash
+$ less +F nazwa_pliku.txt
+```
+Przykład polecenia:
+```bash
+$ less +F test.txt
+```
+![](https://github.com/JSanchoG/md_Polecenia/blob/main/img/less+F_full.png?raw=true)
+<hr>
+
+### Skróty klawiaturowe
+Polecenie `less` akceptuje skróty klawiaturowe ułatwiające nawigację po tekście, zwłaszcza podczas czytania dużych plików:
+- Strzałka w dół, Enter, e, j: Jedna linia do przodu.
+- Strzałka w górę, y, k: Jedna linia wstecz.
+- Spacja, PageDown: Jedna strona do przodu.
+- PageUp, b: Jedna strona wstecz.
+- Strzałka w prawo: Przewiń w prawo.
+- Strzałka w lewo: Przewiń w lewo.
+- Home, g: Skok na początek pliku.
+- End, G: Skok na koniec pliku.
+- /[string]: Wyszukiwanie w przód określonego ciągu.
+- ?[łańcuch]: Wyszukiwanie wstecz dla określonego ciągu.
+- n: Następne dopasowanie podczas wyszukiwania.
+- N: Poprzednie dopasowanie podczas wyszukiwania.
+- q: Wyjdź.
+
+# `wc` – Opis polecenia
+
+`wc` (word count) to polecenie w systemie Linux służące do zliczania liczby linii, słów i znaków w plikach tekstowych. Umożliwia szybkie sprawdzenie rozmiaru pliku pod kątem ilości zawartych danych.
+```bash
+$ wc [opcje] [plik]
+```
+
+### Argumenty polecenia:
 #### `-l`: Wyświetla liczbę linii
 ```bash
 $ wc -l nazwa_pliku.txt
@@ -156,4 +146,3 @@ Przykład polecenia:
 $ wc -L test.txt 
 746 test.txt
 ```
-<hr>
