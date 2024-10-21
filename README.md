@@ -93,6 +93,9 @@ $ wc [opcje] [plik]
 ```
 
 ### Argumenty polecenia:
+Jeśli nie podano żadnych przełączników wyświetlane są linie, po jednej na każdy plik, składające się z 4 kolumn: liczby linii, słów, bajtów oraz nazwy opisywanego pliku.
+
+Wyświetlane dane można zmienić, używając odpowiednich przełączników. Użycie chociaż jednego z nich spowoduje, iż domyślne kolumny, poza nazwą pliku, znikną (o ile nie zostaną przywołane innym przełącznikiem):
 #### `-l`: Wyświetla liczbę linii
 ```bash
 $ wc -l nazwa_pliku.txt
